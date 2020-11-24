@@ -1,0 +1,311 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+ box-sizing: border-box;
+}
+
+/* Mobile first - StadardStyle */
+html, body {
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+.border {
+         border: 1px solid #cccccc;  
+}
+
+.container {
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+padding-left: 1rem;
+padding-right: 1rem;
+}
+
+@media (min-width: 768) {.container { max-width: 720;}}
+
+@media (min-width: 1200) {.container {max-width: 1140;}}
+
+@media (min-width: 1400px) {.container {max-width: 1320px;}}
+
+@media (min-width: 1920px) {.container {max-width: 1410px;}}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-space-between {
+    justify-content: space-between;
+}
+
+.btn {
+    display: inline-flex;
+    font-weight: 300;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1.25rem, 1.75rem;
+    border-radius: 0.75rem;
+    border: 1px solid transparent;
+    background-color: transparent;
+    font-size: 1rem;
+}
+
+.btn2 {
+    display: inline-flex;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-bottom: 0.8rem;
+    margin-left: 2.5rem;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    border: 1px solid transparent;
+    background-color: #25e6c8; 
+    font-weight: bold;
+}
+.btn3 {
+    display: inline-flex;
+    font-size: 8px;
+    font-family: 'Roboto', sans-serif;
+    color: #2baaec;
+    padding: 0.1rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    background-color: white; 
+    font-weight: bold;
+}
+
+
+/* navbar-top */
+.navbar-top {
+    display: none;
+    padding: 1rem 0;
+}
+
+.navbar-top border {
+    opacity: 60%;
+    border-bottom: 1px solid #707070;
+}
+
+.navbar-top .container {
+    padding: 0%;
+}
+
+@media (min-width: 768px) {.navbar-top {display: block;}}
+
+.working-hours {
+    display: flex;
+    align-items: center;
+    
+    }
+.working-hours i {
+    margin-right: 0.5rem;
+    font-size: 1.3rem;
+    color: #2BAAEC;
+}
+
+.working-hours p {
+   margin: 0;
+   font-size: 1.05rem;
+}
+
+.navbar-top ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.navbar-top ul li {
+    margin-left: 1.3rem;
+}
+
+.navbar-top a {
+color: #2BAAEC;
+font-size: 1.1rem;
+}
+.navbar-top a:hover {
+    color: #25E6C8;
+}
+
+
+/* mainmenu */
+#mainmenu {
+    font-family: 'Roboto Slab', serif;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+@media (min-width:768px) { #mainmenu {padding-top: 2rem; padding-bottom: 2rem;}}
+
+#mainmenu .container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#mainmenu .logo {
+    height: 50px;
+   
+}
+@media (min-width: 768px) { #mainmenu .logo {height: 60px;} }
+
+#mainmenu .menu {
+    flex: 2;
+    display: flex;
+    justify-content: flex-end;   
+}
+
+#mainmenu .menu ul {
+    display: none;
+    list-style: none;
+    margin: 0;
+}
+@media (min-width: 992px) { #mainmenu .container .menu ul {display: flex;} }
+
+#mainmenu .menu ul li {
+    margin-left: 1.3rem;
+}
+#mainmenu .menu ul li a {
+    color: #363636; 
+}
+
+#mainmenu .menu ul li a:hover {
+    color: #25e6c8;
+}
+#mainmenu .menu button {
+  font-size: 2.0rem;
+  padding: 0;
+}
+@media (min-width: 992px) { #mainmenu .container .menu button {display: none;} }
+
+
+/* Showcase */
+
+#showcase {
+    background-color: #DEDEDE;
+    font-family: 'Roboto Slab', serif;
+    padding-right: 1rem;   
+}
+
+#showcase .container { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#showcase .placehold {
+    height: 155px;
+    margin-top: 15px;
+    padding-right: 0.5rem;
+
+    /* border:  solid black; */
+    
+}
+@media (min-width: 768px) { #showcase .placehold {height: 550px; padding-right: 1rem; margin-left: -3rem; } }
+
+
+#showcase .menu {
+    justify-content: flex-end;
+    
+}
+@media (min-width: 768px) { #showcase .menu {padding-left: 6rem;} }
+
+#showcase .menu ul li {
+    line-height: 1.2rem;
+    list-style: none;
+
+}
+@media (min-width: 768px) { #showcase  .menu ul  {display: inline;} }
+
+#showcase .menu ul li a1{
+    color: white;
+}
+@media (min-width: 768px) { #showcase .menu ul li a1  {display: flex; font-size: 30px; padding-bottom: 0.5rem;}}
+#showcase .menu ul li a2{
+    color: white;
+}
+@media (min-width: 768px) { #showcase .menu ul li a2  {display: flex; font-size: 30px; padding-bottom: 5rem; }}
+
+#showcase .menu ul li a3{
+    display: none;
+    font-size: 18px;
+    margin-top: 0.6rem;
+    
+}
+@media (min-width: 768px) { #showcase  .menu ul li a3  {display: flex;} }
+
+#showcase .btn2 {
+   
+  }
+  @media (min-width: 768px) { #showcase .menu button {
+      display: flex; 
+      font-size: 18px;
+      margin-top: 3rem;
+      padding-left: 3rem;
+      padding-right: 3rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;   
+      margin-left: -0.1rem;
+    } }
+
+   /* appointment */
+
+   #appointment {
+        padding: 0.5rem;
+        background-color: #2baaec;
+        opacity: 80%;
+        font-family: 'Roboto Slab', serif;
+        padding-right: 1rem;   
+    }
+@media (min-width: 768px){#appointment .container { padding: 3.5rem; }}
+
+#appointment .container { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#appointment .make-app p {
+  
+    color: white;
+    font-size: 8px;
+    font-family: 'Roboto Slab', serif;
+}
+@media (min-width: 768px){#appointment .make-app p { font-size: 30px; }}
+
+#appointment .btn3 {
+    
+}
+@media (min-width: 768px){#appointment .btn3 { 
+    font-size: 18px;
+    padding: 1rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}}
+
+/* footer */
+
+#footer {
+background-color: #2baaec;
+
+}
+@media (min-width: 768px){#footer { padding: 1rem; }}
+
+#footer .container { 
+    text-align: center;
+}
+
+#footer .container s { 
+    color: white;
+    font-size: 5px;
+    opacity: 60%;
+    text-decoration: none;
+}
+@media (min-width: 768px){#footer .container s { font-size: 16px; }} 
