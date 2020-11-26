@@ -15,7 +15,7 @@ html, body {
 }
 
 .border {
-         border: 1px solid #cccccc;  
+     border: 1px solid #cccccc;  
 }
 
 .container {
@@ -254,6 +254,156 @@ font-size: 1.1rem;
       padding-bottom: 1rem;   
       margin-left: -0.1rem;
     } }
+
+    /* ABOUT US */
+
+    #about-us {
+        /* background-color: #DEDEDE; */
+        font-family: 'Roboto Slab', serif;
+        padding-right: 1rem;   
+    }
+    
+    #about-us .container { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    @media (min-width: 768px) { #about-us .container  {margin-top: 5rem;} }
+
+    #about-us .placehold2 {
+        height: 170px;
+        margin-top: 1.3rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    @media (min-width: 768px) { #about-us .placehold2  {height: 550px; margin-left: 1rem;} }
+
+    #about-us .text ul li  {
+        line-height: 1.2rem;
+        list-style: none;
+       
+    }
+    @media (min-width: 768px) { #about-us .text ul li { margin-right: 10rem;} }
+   
+    #about-us .text ul li a1   {
+        font-family: 'Roboto Slab', serif;
+        /* border: 1px solid black; */
+    }
+    #about-us .color   {
+        color:#2BAAEC;
+        }
+
+    @media (min-width: 768px) { #about-us .text ul li a1 {font-size: 40px; line-height: 1.1; margin-top:;} }
+ 
+
+
+    #about-us .text ul li a2   {
+        display: none;
+        
+    }
+    @media (min-width: 768px) { #about-us  .text ul li a2 {display: flex;
+    margin-top: 1.3rem; margin-bottom: 2rem;} }
+
+    #about-us .text ul li a3  {
+        display: none;
+        font-size: 18px;
+        line-height: 1.4;
+        font-family: 'Roboto', sans-serif;
+        margin-right: 1.2rem;
+    }
+    @media (min-width: 768px) { #about-us  .text ul li a3  {display: flex;} }
+
+    #about-us .text ul li a4 {
+        display: none;
+        font-size: 18px;
+        line-height: 1.4;
+        margin-top: 2rem;
+        font-family: 'Roboto', sans-serif;
+
+    }
+    @media (min-width: 768px) { #about-us  .text ul li a4  {display: flex;} }
+
+    #about-us .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        background-color: White;
+        margin-left: 2.5rem;
+      }
+     
+      #about-us .grid-item {
+        background-color: white;
+        color: #2baaec;       
+        font-size: 10px;
+        text-align: left;
+      }
+      #about-us .grid-item2 {
+        background-color: white;
+        margin-right: center;
+        font-size: 4.5px;
+        text-align: left;
+      }
+      @media (min-width: 768px) { #about-us  .grid-container {margin-top: 3rem; margin-right:14rem; margin-bottom: 6rem;} }
+      @media (min-width: 768px) { #about-us  .grid-item {font-size: 40px;} }
+      @media (min-width: 768px) { #about-us  .grid-item2 {font-size: 18px;} }
+
+
+
+
+
+      /* SERVICES */
+      #services {
+        /* background-color: #DEDEDE; */
+        font-family: 'Roboto Slab', serif;
+        padding-right: 1rem;   
+    }
+    
+    #services .container { 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    #services .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-left: 2.5rem;
+      }
+     
+      #services  .grid-item .iconbackground {
+              
+        font-size: 5px;
+        text-align: left;
+      }
+
+      #services  .grid-item .toothicon {
+              
+        font-size: 5px;
+        text-align: left;
+      }
+
+      #services  .grid-item {
+        background-color: white;
+        color: #2baaec;       
+        font-size: 10px;
+        text-align: left;
+      }
+
+
+
+
+
+
+
 
    /* appointment */
 
