@@ -277,11 +277,11 @@ font-size: 1.1rem;
 
     #about-us .placehold2 {
         height: 170px;
-        margin-top: 1.3rem;
+        /* margin-top: 1.3rem; */
         margin-right: 1rem;
         margin-left: 1rem;
     }
-    @media (min-width: 768px) { #about-us .placehold2  {height: 550px; margin-left: 1rem;} }
+    @media (min-width: 768px) { #about-us .placehold2  {height: 680px; margin-left: 1rem;} }
 
     #about-us .text ul li  {
         line-height: 1.2rem;
@@ -298,7 +298,7 @@ font-size: 1.1rem;
         color:#2BAAEC;
         }
 
-    @media (min-width: 768px) { #about-us .text ul li a1 {font-size: 40px; line-height: 1.1; margin-top:;} }
+    @media (min-width: 768px) { #about-us .text ul li a1 {font-size: 40px; line-height: 1.1; } }
  
 
 
@@ -357,47 +357,85 @@ font-size: 1.1rem;
 
       /* SERVICES */
       #services {
-        /* background-color: #DEDEDE; */
-        font-family: 'Roboto Slab', serif;
-        padding-right: 1rem;   
+      background-color: #f7f7f7;
+      padding: 8rem;  
     }
     
     #services .container { 
-        display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: 1rem;
-        padding-right: 1rem;
+    }
+    #services .top {
+        list-style: none;
     }
 
-    #services .grid-container {
+    #services .grid {
         display: grid;
-        grid-template-columns: auto auto auto;
-        margin-left: 2.5rem;
-      }
-     
-      #services  .grid-item .iconbackground {
-              
-        font-size: 5px;
-        text-align: left;
-      }
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        margin-top: 3.5rem;
+    }
 
-      #services  .grid-item .toothicon {
-              
-        font-size: 5px;
-        text-align: left;
-      }
+    #services li a {
+        font-size: 40px;
+        text-align: center;
+        font-family: 'Roboto Slab', serif;
+        margin-left: 30rem;
+    }
+    #services li a1 {
+        margin-left: 24rem;
+    }
 
-      #services  .grid-item {
-        background-color: white;
-        color: #2baaec;       
-        font-size: 10px;
-        text-align: left;
-      }
+    .box p {
+        font-size: 22px;
+        text-align: center;
+    }
+    .box p1 {
+        font-size: 18px;
+        text-align: center;
+        font-family: 'Roboto Slab', serif;  
+    }
+    .box {
+        padding: 2rem;
+    
+        background-color: #f3fbff;
+        position: relative;
+        z-index: 1;
+    }
 
+    .box .pic {
+        /* border: 1px solid black; */
+        margin-left: 6.7rem;
+        margin-right: 5rem;
+    }
+
+    .box .pic:hover {
+        color: #2baaec;
+    }
+    .box .iconbackground {
+        position: relative;
+        z-index: -1;
+        } 
+        
+       
+   
+    .box .toothicon {
+        position: absolute;
+        margin-left: 2rem;
+        margin-top: 1.9rem;
+    }
+    #box2 {}
+    #box3 {}
+    #box4 {}
+    #box5 .toothicon{
+        margin-left: 3rem;
+     }
+    #box6 {}
+
+
+
+  
 
 
 
