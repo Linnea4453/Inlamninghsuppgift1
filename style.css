@@ -208,7 +208,7 @@ font-size: 1.1rem;
     /* border:  solid black; */
     
 }
-@media (min-width: 768px) { #showcase .placehold {height: 550px; padding-right: 1rem; margin-left: -3rem; } }
+@media (min-width: 768px) { #showcase .placehold {height: 679px; padding-right: 1rem; margin-left: -3rem; } }
 
 
 #showcase .menu {
@@ -218,25 +218,22 @@ font-size: 1.1rem;
 @media (min-width: 768px) { #showcase .menu {padding-left: 6rem;} }
 
 #showcase .menu ul li {
-    line-height: 1.2rem;
     list-style: none;
+    
 
 }
-@media (min-width: 768px) { #showcase  .menu ul  {display: inline;} }
+@media (min-width: 768px) { #showcase .menu ul  {display: inline;} }
 
 #showcase .menu ul li a1{
-    color: white;
+    color: #363636;
 }
-@media (min-width: 768px) { #showcase .menu ul li a1  {display: flex; font-size: 30px; padding-bottom: 0.5rem;}}
-#showcase .menu ul li a2{
-    color: white;
-}
-@media (min-width: 768px) { #showcase .menu ul li a2  {display: flex; font-size: 30px; padding-bottom: 5rem; }}
+@media (min-width: 768px) { #showcase .menu ul li a1  {display: flex; font-size: 60px; line-height: 3.4rem;}}
+
 
 #showcase .menu ul li a3{
     display: none;
     font-size: 18px;
-    margin-top: 0.6rem;
+    margin-top: 2rem;
     
 }
 @media (min-width: 768px) { #showcase  .menu ul li a3  {display: flex;} }
@@ -258,7 +255,6 @@ font-size: 1.1rem;
     /* ABOUT US */
 
     #about-us {
-        /* background-color: #DEDEDE; */
         font-family: 'Roboto Slab', serif;
         padding-right: 1rem;   
     }
@@ -281,7 +277,7 @@ font-size: 1.1rem;
         margin-right: 1rem;
         margin-left: 1rem;
     }
-    @media (min-width: 768px) { #about-us .placehold2  {height: 680px; margin-left: 1rem;} }
+    @media (min-width: 768px) { #about-us .placehold2  {height: 723px;} }
 
     #about-us .text ul li  {
         line-height: 1.2rem;
@@ -357,88 +353,95 @@ font-size: 1.1rem;
 
       /* SERVICES */
       #services {
+      /* height: 249px; */
       background-color: #f7f7f7;
-      padding: 8rem;  
+        
     }
+    @media (min-width: 768px) { #services {height:1249px; padding: 8rem; }} 
+
+
     
     #services .container { 
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        text-align: center;
+     
     }
     #services .top {
         list-style: none;
+        padding: 1rem;
     }
 
     #services .grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 1rem;
-        margin-top: 3.5rem;
+      
     }
+    @media (min-width: 768px) { #services .grid {height: 436px; margin-top: 3.5rem;} }
 
     #services li a {
-        font-size: 40px;
-        text-align: center;
+        font-size: 14px;
         font-family: 'Roboto Slab', serif;
-        margin-left: 30rem;
     }
+    @media (min-width: 768px) { #services .top li a{font-size: 40px;} }
+
     #services li a1 {
-        margin-left: 24rem;
+        display: none;
     }
+    @media (min-width: 768px) { #services .top li a1 {display: inline;} }
+
+
+    .box h1 {
+        font-size: 10px;
+        text-align: center;
+    }
+    @media (min-width: 768px) { #services .box h1 {font-size: 22px;} }
 
     .box p {
-        font-size: 22px;
+        font-size: 5px;
         text-align: center;
-    }
-    .box p1 {
-        font-size: 18px;
-        text-align: center;
-        font-family: 'Roboto Slab', serif;  
-    }
-    .box {
-        padding: 2rem;
     
+    }
+    @media (min-width: 768px) { #services .box p {font-size: 18px;} }
+
+    .box {
+        text-align: center;
+        padding: .5rem;
         background-color: #f3fbff;
-        position: relative;
-        z-index: 1;
+        border-radius: 2%;
     }
-
-    .box .pic {
-        /* border: 1px solid black; */
-        margin-left: 6.7rem;
-        margin-right: 5rem;
-    }
-
-    .box .pic:hover {
-        color: #2baaec;
-    }
-    .box .iconbackground {
-        position: relative;
-        z-index: -1;
-        } 
-        
-       
+    @media (min-width: 768px) { #services .box {padding: 2rem;} }
    
-    .box .toothicon {
-        position: absolute;
-        margin-left: 2rem;
-        margin-top: 1.9rem;
+
+    .pic {
+        display: flex;
+        justify-content: center;
+        background-color: #25e6c8;
+        border-radius: 50%;
+        height: 35px;
+        width: 35px;
+        margin-left: 1.6rem;
     }
-    #box2 {}
-    #box3 {}
-    #box4 {}
-    #box5 .toothicon{
-        margin-left: 3rem;
-     }
-    #box6 {}
+
+    #services .pic:hover {
+        background-color: #2BAAEC;
+      }
 
 
 
-  
 
+    @media (min-width: 768px) { #services .pic {  height: 120px;
+        width: 120px;
+        margin-left: 7.2rem;} }
 
+    .toothicon {
+        height: 20px;
+        margin-top: 0.38rem;
+    }
 
+    @media (min-width: 768px) { #services .toothicon {height: 70px; margin-top: 1.5rem;}}
 
 
 
